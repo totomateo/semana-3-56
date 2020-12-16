@@ -17,6 +17,8 @@ exports.signin = async (req, res, next) => {
     try {
         // Verificar que el usuario exista
         const user = await models.user.findOne({ where: { email: req.body.email } });
+        const mensaje = "si funciona";
+
         if (user) {
             // Verificar que la contraseña sea correcta
             const passwordIsValid = bcrypt.compareSync(req.body.password, user.password);
@@ -30,6 +32,7 @@ exports.signin = async (req, res, next) => {
                     auth: true,
                     accessToken: token,
                     user : user,
+                    mensaje : mensaje,
                 });
             } else {
                 res.status(401).json({
