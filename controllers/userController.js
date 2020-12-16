@@ -29,6 +29,7 @@ exports.signin = async (req, res, next) => {
                 res.status(200).send({
                     auth: true,
                     accessToken: token,
+                    user : user,
                 });
             } else {
                 res.status(401).json({
