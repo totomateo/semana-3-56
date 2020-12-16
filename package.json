@@ -44,10 +44,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/totomateo/semana-3-56.git"
+    "url": "git+https://github.com/lmanaya/BackToHeroku.git"
   },
   "bugs": {
-    "url": "https://github.com/totomateo/semana-3-56/issues"
+    "url": "https://github.com/lmanaya/BackToHeroku/issues"
   },
-  "homepage": "https://github.com/totomateo/semana-3-56#readme"
+  "homepage": "https://github.com/lmanaya/BackToHeroku#readme"
 }
